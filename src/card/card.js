@@ -1,3 +1,4 @@
+import html from '../index.html'
 export default function createCard(txtColor,bgColor,parentNode,h1Content,pContent,subDivBg) {
     var card=document.createElement("div")
     card.className="my-3 py-3 col-6 text-center overflow-hidden mt-4 "+txtColor+" "+bgColor

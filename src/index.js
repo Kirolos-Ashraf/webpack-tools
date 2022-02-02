@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-import  "./header/headerComponent";
+import  "./index.html"
+import "./header/headerComponent";
 
 import createCard from './card/card';
 var container= document.getElementsByClassName("container")[1]

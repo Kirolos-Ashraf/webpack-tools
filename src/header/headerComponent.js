@@ -1,5 +1,7 @@
-var nav=document.getElementsByTagName("nav")
-nav[0].className="container d-flex flex-column flex-md-row justify-content-between nav"
+import html from '../index.html'
+
+var nav = document.getElementsByTagName("nav")
+nav[0].className ="container d-flex flex-column flex-md-row justify-content-between nav"
 
 let navItems=["webpack","navLink1","navLink2","navLink3"]
 for (const navItem of navItems) {
