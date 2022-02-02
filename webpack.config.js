@@ -11,9 +11,9 @@ const pathModule = require("path");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "script.min.js",
+    filename: "./js/script.min.js",
     path: pathModule.resolve(__dirname, "dist"),
-    assetModuleFilename: "images/[name][ext]",
+    assetModuleFilename: "assets/[name][ext]",
   },
   mode: "development",
   module: {
@@ -27,6 +27,7 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
+     
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -37,7 +38,7 @@ module.exports = {
   plugins: [
     new htmlPlugin({template:"src/index.html"}),
     
-    new MiniCssExtractPlugin({ filename: "style.bundle.css" }),
+    new MiniCssExtractPlugin({ filename: "./css/style.bundle.css" }),
   ],
   //   plugins:[
   //     new InjectHtmlPlugin({
